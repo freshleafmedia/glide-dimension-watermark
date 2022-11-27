@@ -44,12 +44,6 @@ $api->setManipulators($manipulators);
 Note: It is important that `DimensionWatermark` is added after the [`Size`](https://glide.thephpleague.com/2.0/api/size/) manipulator and before [`Encode`](https://glide.thephpleague.com/2.0/api/encode/) manipulator
 
 
-
-## Tests
-
-Unit tests can be run via `composer test`
-
-
 ## License
 
 See [LICENSE](LICENSE)
