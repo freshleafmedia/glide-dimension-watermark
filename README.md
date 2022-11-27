@@ -34,11 +34,11 @@ $server = League\Glide\ServerFactory::create([
 
 
 // Add DimensionWatermark to the manipulators array
-$manipulators = $api->getManipulators();
+$manipulators = $server->getApi()->getManipulators();
 
 array_splice($manipulators, count($manipulators) - 1, 0, [new DimensionWatermark()]);
 
-$api->setManipulators($manipulators);
+$server->getApi()->setManipulators($manipulators);
 ```
 
 Note: It is important that `DimensionWatermark` is added after the [`Size`](https://glide.thephpleague.com/2.0/api/size/) manipulator and before [`Encode`](https://glide.thephpleague.com/2.0/api/encode/) manipulator
