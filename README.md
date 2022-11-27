@@ -41,7 +41,7 @@ array_splice($manipulators, count($manipulators) - 1, 0, [new DimensionWatermark
 $api->setManipulators($manipulators);
 ```
 
-Note: It is important that `DimensionWatermark` is added after the `Size` manipulator and before `Encode` manipulator
+Note: It is important that `DimensionWatermark` is added after the [`Size`](https://glide.thephpleague.com/2.0/api/size/) manipulator and before [`Encode`](https://glide.thephpleague.com/2.0/api/encode/) manipulator
 
 
 
