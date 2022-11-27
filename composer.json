@@ -1,0 +1,15 @@
+{
+    "name": "freshleafmedia/glide-dimension-watermark",
+    "description": "A Glide manipulation which overlays the images dimensions onto an image.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Freshleafmedia\\DimensionWatermark\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">7.1",
+        "league/glide": "^2.0"
+    }
+}
