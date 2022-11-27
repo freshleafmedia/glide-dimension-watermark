@@ -41,7 +41,9 @@ array_splice($manipulators, count($manipulators) - 1, 0, [new DimensionWatermark
 $server->getApi()->setManipulators($manipulators);
 ```
 
-Note: It is important that `DimensionWatermark` is added after the [`Size`](https://glide.thephpleague.com/2.0/api/size/) manipulator and before [`Encode`](https://glide.thephpleague.com/2.0/api/encode/) manipulator
+The manipulator runs when the `dwm` parameter is set to any value. For example `/image.jpg?dwm=1` or `/image.jpg?w=100&fm=webp&dwm=1`
+
+*Note: It is important that `DimensionWatermark` is added after the [`Size`](https://glide.thephpleague.com/2.0/api/size/) manipulator and before [`Encode`](https://glide.thephpleague.com/2.0/api/encode/) manipulator*
 
 
 ## License
