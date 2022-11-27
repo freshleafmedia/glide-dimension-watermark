@@ -6,10 +6,17 @@ use Intervention\Image\AbstractFont;
 use Intervention\Image\Image;
 use League\Glide\Manipulators\BaseManipulator;
 
+/**
+ * @property ?string $dwm
+ */
 class DimensionWatermark extends BaseManipulator
 {
     public function run(Image $image): Image
     {
+        if ($this->dwm === null) {
+            return $image;
+        }
+
         for ($offsetX = -2; $offsetX <= 2; $offsetX++) {
             for ($offsetY = -2; $offsetY <= 2; $offsetY++) {
                 $image->text(
